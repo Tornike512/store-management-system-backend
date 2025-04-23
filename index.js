@@ -1,13 +1,15 @@
 import express from "express";
 import * as dotenv from "dotenv";
+import router from "./routes/storeRoute.js";
 dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.use(express.json());
+app.use(router);
 
-const data = [
+export const data = [
   {
     ID: "7e3a1f60-8c24-492d-ae5b-87df12c39a45",
     createdAt: "/Date(1744269870080+0000)/",
@@ -269,53 +271,6 @@ const data = [
     FloorArea: 6270,
   },
 ];
-
-// send store info
-app.get("/api/stores", (req, res) => {
-  try {
-    res.json({ stores: data });
-  } catch (error) {
-    console.log("error sending get request", error);
-  }
-});
-
-// create new store
-app.post("/api/stores", (req, res) => {
-  try {
-    const newData = req.body;
-
-    res.json(newData);
-  } catch (error) {
-    console.log("Error adding a new store", error);
-  }
-});
-
-// delete store
-app.delete("/api/stores/:id", (req, res) => {
-  try {
-    const id = req.params.id;
-
-    const filterData = data.filter((newData) => newData.ID === id);
-
-    res.json(filterData);
-  } catch (error) {
-    console.log("Error deleting a store", error);
-  }
-});
-
-// update store
-app.put("/api/stores/:id", (req, res) => {
-  try {
-    const id = req.params.id;
-    let updatedStoreData = req.body;
-
-    let findById = data.find((newData) => newData.ID === id);
-    Object.assign(findById, updatedStoreData);
-    res.json(findById);
-  } catch (error) {
-    console.log("Error updating store", error);
-  }
-});
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
