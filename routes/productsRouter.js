@@ -9,11 +9,12 @@ import {
 
 const productsRouter = Router();
 
-productsRouter.route("/api/products").get(getProducts).post(createProducts);
+productsRouter.route("/api/products").get(getProducts);
 productsRouter
   .route("/api/products/:id")
   .delete(deleteProduct)
   .put(updateProduct)
-  .get(getOneProduct);
+  .get(getOneProduct)
+  .post(createProducts);
 
 export default productsRouter;

@@ -12,7 +12,7 @@ export const getOneProduct = (req, res) => {
   try {
     const id = req.params.id;
 
-    const oneProduct = productsData.find((product) => product.ID === id);
+    const oneProduct = productsData.find((product) => product.Store_ID === id);
 
     res.json(oneProduct);
   } catch (error) {
@@ -22,12 +22,20 @@ export const getOneProduct = (req, res) => {
 
 export const createProducts = (req, res) => {
   try {
+    const storeId = req.params.Store_ID;
     const newProduct = req.body;
+
+    if (!newProduct.Name || !newProduct.Price_amount) {
+      return res.status(400).json({ error: "Product requires Name and Price" });
+    }
+
+    newProduct.StoreId = storeId;
+
     productsData.push(newProduct);
 
-    res.json(newProduct);
+    return res.status(201).json(newProduct);
   } catch (error) {
-    console.log("error creating product", error);
+    return res.status(500).json({ error: "Failed to create product" });
   }
 };
 

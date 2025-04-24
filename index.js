@@ -33,7 +33,7 @@ export let productsData = [
       "Manufactured with precision engineering and premium materials. 5-year warranty included with extended options available.",
     MadeIn: "United States",
     ProductionCompanyName: "Ergonomics Plus",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "7e3a1f60-8c24-492d-ae5b-87df12c39a45",
     Comment: {
       __deferred: {
@@ -67,7 +67,7 @@ export let productsData = [
       "Handcrafted from sustainable materials. Each piece unique with natural wood grain variations.",
     MadeIn: "Canada",
     ProductionCompanyName: "Heritage Woodworks",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "7e3a1f60-8c24-492d-ae5b-87df12c39a45",
     Comment: {
       __deferred: {
@@ -101,7 +101,7 @@ export let productsData = [
       "Designed with premium components for reliable charging performance and device protection.",
     MadeIn: "South Korea",
     ProductionCompanyName: "TechCharge",
-    Status: "LOW_STOCK",
+    Status: "OUT_OF_STOCK",
     Store_ID: "7e3a1f60-8c24-492d-ae5b-87df12c39a45",
     Comment: {
       __deferred: {
@@ -136,7 +136,7 @@ export let productsData = [
       "Energy efficient design with latest LED technology for reduced power consumption and extended lifespan.",
     MadeIn: "Japan",
     ProductionCompanyName: "LightTech Solutions",
-    Status: "AVAILABLE",
+    Status: "STORAGE",
     Store_ID: "7e3a1f60-8c24-492d-ae5b-87df12c39a45",
     Comment: {
       __deferred: {
@@ -170,7 +170,7 @@ export let productsData = [
       "Handcrafted from premium full-grain leather with meticulous attention to detail and quality stitching.",
     MadeIn: "Italy",
     ProductionCompanyName: "Milano Leather Goods",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "7e3a1f60-8c24-492d-ae5b-87df12c39a45",
     Comment: {
       __deferred: {
@@ -204,7 +204,7 @@ export let productsData = [
       "Designed for both functionality and aesthetic appeal. Assembly service available for additional fee.",
     MadeIn: "Germany",
     ProductionCompanyName: "ModernHaus",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "92f4d108-3b7c-41e2-9d5a-61c874e35c02",
     Comment: {
       __deferred: {
@@ -239,7 +239,7 @@ export let productsData = [
       "Crafted with precision engineering for accurate timekeeping and elegant display.",
     MadeIn: "Sweden",
     ProductionCompanyName: "TimeWorks",
-    Status: "LOW_STOCK",
+    Status: "OUT_OF_STOCK",
     Store_ID: "92f4d108-3b7c-41e2-9d5a-61c874e35c02",
     Comment: {
       __deferred: {
@@ -273,7 +273,7 @@ export let productsData = [
       "Elegant solution for workspace organization with durable construction and easy cleaning.",
     MadeIn: "France",
     ProductionCompanyName: "Clear Solutions",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "92f4d108-3b7c-41e2-9d5a-61c874e35c02",
     Comment: {
       __deferred: {
@@ -307,7 +307,7 @@ export let productsData = [
       "Engineered for comfort during extended use with responsive keys and precise tracking.",
     MadeIn: "Netherlands",
     ProductionCompanyName: "ErgoTech",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "92f4d108-3b7c-41e2-9d5a-61c874e35c02",
     Comment: {
       __deferred: {
@@ -377,7 +377,7 @@ export let productsData = [
       "Built with premium components for demanding applications and gaming performance.",
     MadeIn: "United States",
     ProductionCompanyName: "TechForge Systems",
-    Status: "AVAILABLE",
+    Status: "STORAGE",
     Store_ID: "5dc76e2f-a78b-4cb1-8c4d-f3e94136af21",
     Comment: {
       __deferred: {
@@ -411,7 +411,7 @@ export let productsData = [
       "Engineered for immersive viewing experience with vibrant colors and seamless motion.",
     MadeIn: "South Korea",
     ProductionCompanyName: "VisualTech",
-    Status: "LOW_STOCK",
+    Status: "STORAGE",
     Store_ID: "5dc76e2f-a78b-4cb1-8c4d-f3e94136af21",
     Comment: {
       __deferred: {
@@ -446,7 +446,7 @@ export let productsData = [
       "Designed for competitive gaming with emphasis on audio clarity and comfort during extended sessions.",
     MadeIn: "Taiwan",
     ProductionCompanyName: "AudioPro Gaming",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "5dc76e2f-a78b-4cb1-8c4d-f3e94136af21",
     Comment: {
       __deferred: {
@@ -480,7 +480,7 @@ export let productsData = [
       "Precision engineered for competitive gaming with durable construction and responsive keystrokes.",
     MadeIn: "Germany",
     ProductionCompanyName: "MechTech Gaming",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "5dc76e2f-a78b-4cb1-8c4d-f3e94136af21",
     Comment: {
       __deferred: {
@@ -514,7 +514,7 @@ export let productsData = [
       "Designed for precision control with customizable features for various gaming styles.",
     MadeIn: "Taiwan",
     ProductionCompanyName: "PrecisionPoint",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "5dc76e2f-a78b-4cb1-8c4d-f3e94136af21",
     Comment: {
       __deferred: {
@@ -548,7 +548,7 @@ export let productsData = [
       "Crafted from premium long-staple cotton for exceptional absorbency and softness.",
     MadeIn: "Portugal",
     ProductionCompanyName: "Luxe Home Collection",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "c8b42e6a-f5c3-49d1-b8a7-90d74f5318ae",
     Comment: {
       __deferred: {
@@ -582,7 +582,7 @@ export let productsData = [
       "Hand-poured in small batches with carefully curated fragrance profiles.",
     MadeIn: "France",
     ProductionCompanyName: "Aroma Artisan",
-    Status: "AVAILABLE",
+    Status: "STORAGE",
     Store_ID: "c8b42e6a-f5c3-49d1-b8a7-90d74f5318ae",
     Comment: {
       __deferred: {
@@ -616,7 +616,7 @@ export let productsData = [
       "Designed to optimize home comfort while reducing energy consumption with intelligent scheduling.",
     MadeIn: "Finland",
     ProductionCompanyName: "EcoSmart",
-    Status: "LOW_STOCK",
+    Status: "OUT_OF_STOCK",
     Store_ID: "c8b42e6a-f5c3-49d1-b8a7-90d74f5318ae",
     Comment: {
       __deferred: {
@@ -651,7 +651,7 @@ export let productsData = [
       "Crafted with premium fabrics for durability and comfort with designer patterns.",
     MadeIn: "Spain",
     ProductionCompanyName: "Casa Textiles",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "c8b42e6a-f5c3-49d1-b8a7-90d74f5318ae",
     Comment: {
       __deferred: {
@@ -685,7 +685,7 @@ export let productsData = [
       "Handcrafted by skilled artisans with unique variations in each piece making every set one-of-a-kind.",
     MadeIn: "Italy",
     ProductionCompanyName: "Arterra Ceramics",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "c8b42e6a-f5c3-49d1-b8a7-90d74f5318ae",
     Comment: {
       __deferred: {
@@ -720,7 +720,7 @@ export let productsData = [
       "Engineered with cutting-edge acoustic technology for immersive audio experience.",
     MadeIn: "Japan",
     ProductionCompanyName: "AudioElite",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "f1d96342-0e57-4df9-a742-c87dc3bfe208",
     Comment: {
       __deferred: {
@@ -754,7 +754,7 @@ export let productsData = [
       "Designed with advanced sensors for accurate fitness metrics and durable construction for active lifestyles.",
     MadeIn: "Switzerland",
     ProductionCompanyName: "PrecisionFit",
-    Status: "LOW_STOCK",
+    Status: "OK",
     Store_ID: "f1d96342-0e57-4df9-a742-c87dc3bfe208",
     Comment: {
       __deferred: {
@@ -788,7 +788,7 @@ export let productsData = [
       "Engineered for outdoor use with rugged construction and exceptional sound quality.",
     MadeIn: "South Korea",
     ProductionCompanyName: "SoundStream",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "f1d96342-0e57-4df9-a742-c87dc3bfe208",
     Comment: {
       __deferred: {
@@ -822,7 +822,7 @@ export let productsData = [
       "Designed for comfort during extended use with secure fit for active users.",
     MadeIn: "Singapore",
     ProductionCompanyName: "AudioPulse",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "f1d96342-0e57-4df9-a742-c87dc3bfe208",
     Comment: {
       __deferred: {
@@ -856,7 +856,7 @@ export let productsData = [
       "Designed for both professional and amateur photographers with intuitive controls and exceptional image quality.",
     MadeIn: "Japan",
     ProductionCompanyName: "OptiView",
-    Status: "OUT_OF_STOCK",
+    Status: "OK",
     Store_ID: "f1d96342-0e57-4df9-a742-c87dc3bfe208",
     Comment: {
       __deferred: {
@@ -890,7 +890,7 @@ export let productsData = [
       "Engineered for stability and quiet operation with sustainable materials and modern design.",
     MadeIn: "Sweden",
     ProductionCompanyName: "ErgoWorks",
-    Status: "AVAILABLE",
+    Status: "OK",
     Store_ID: "3e4a7d85-9bc2-4f6e-b31c-8d62fba7e542",
     Comment: {
       __deferred: {
