@@ -8,6 +8,18 @@ export const getProducts = (req, res) => {
   }
 };
 
+export const getOneProduct = (req, res) => {
+  try {
+    const id = req.params.id;
+
+    const oneProduct = productsData.find((product) => product.ID === id);
+
+    res.json(oneProduct);
+  } catch (error) {
+    console.log("Error sending product", error);
+  }
+};
+
 export const createProducts = (req, res) => {
   try {
     const newProduct = req.body;
