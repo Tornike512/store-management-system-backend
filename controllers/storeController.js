@@ -31,7 +31,7 @@ export const deleteStore = (req, res) => {
     const deletedStore = data.splice(storeIndex, 1)[0];
 
     res.status(200).json({
-      message: "Store deleted successfully",
+      message: "Store deleted",
       deletedStore: deletedStore,
     });
   } catch (error) {
