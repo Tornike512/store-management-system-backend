@@ -8,6 +8,21 @@ export const getProducts = (req, res) => {
   }
 };
 
+export const getProductsByStoreId = (req, res) => {
+  try {
+    const id = req.params.storeId;
+    console.log(id);
+
+    const filterByStoreId = productsData.filter(
+      (product) => product.Store_ID === id
+    );
+
+    res.json(filterByStoreId);
+  } catch (error) {
+    console.log("Error sending product", error);
+  }
+};
+
 export const getOneProduct = (req, res) => {
   try {
     const id = req.params.id;
@@ -22,8 +37,10 @@ export const getOneProduct = (req, res) => {
 
 export const createProducts = (req, res) => {
   try {
-    const storeId = req.params.Store_ID;
+    const storeId = req.params.storeId;
     const newProduct = req.body;
+
+    console.log(storeId, "storeid");
 
     if (!newProduct.Name || !newProduct.Price_amount) {
       return res.status(400).json({ error: "Product requires Name and Price" });

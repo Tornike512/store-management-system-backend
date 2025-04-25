@@ -5,16 +5,19 @@ import {
   deleteProduct,
   updateProduct,
   getOneProduct,
+  getProductsByStoreId,
 } from "../controllers/productController.js";
 
 const productsRouter = Router();
 
 productsRouter.route("/api/products").get(getProducts);
 productsRouter
-  .route("/api/products/:id")
+  .route("/api/product/:id")
   .delete(deleteProduct)
   .put(updateProduct)
-  .get(getOneProduct)
-  .post(createProducts);
+  .get(getOneProduct);
+
+productsRouter.route("/api/products/:storeId").get(getProductsByStoreId);
+productsRouter.route("/api/product/:storeId").post(createProducts);
 
 export default productsRouter;
