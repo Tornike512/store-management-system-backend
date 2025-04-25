@@ -22,11 +22,21 @@ export const deleteStore = (req, res) => {
   try {
     const id = req.params.id;
 
-    const filterData = data.filter((newData) => newData.ID === id);
+    const storeIndex = data.findIndex((store) => store.ID === id);
 
-    res.json(filterData);
+    if (storeIndex === -1) {
+      return res.status(404).json({ message: `Store with ID ${id} not found` });
+    }
+
+    const deletedStore = data.splice(storeIndex, 1)[0];
+
+    res.status(200).json({
+      message: "Store deleted successfully",
+      deletedStore: deletedStore,
+    });
   } catch (error) {
-    console.log("Error deleting a store", error);
+    console.error("Error deleting store:", error);
+    res.status(500).json({ message: "Server error while deleting store" });
   }
 };
 

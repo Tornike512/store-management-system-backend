@@ -11,6 +11,7 @@ import {
 const productsRouter = Router();
 
 productsRouter.route("/api/products").get(getProducts);
+
 productsRouter
   .route("/api/product/:id")
   .delete(deleteProduct)
