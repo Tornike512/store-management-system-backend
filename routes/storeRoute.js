@@ -8,7 +8,7 @@ import {
 
 const router = Router();
 
-router.route("/api/stores").get(getStores).post(updateStore);
-router.route("/api/stores/:id").delete(deleteStore).put(createStore);
+router.route("/api/stores").get(getStores).post(createStore);
+router.route("/api/stores/:id").delete(deleteStore).put(updateStore);
 
 export default router;

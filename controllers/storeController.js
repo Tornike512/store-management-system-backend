@@ -11,6 +11,7 @@ export const getStores = (req, res) => {
 export const createStore = (req, res) => {
   try {
     const newData = req.body;
+    data.push(newData);
 
     res.json(newData);
   } catch (error) {
